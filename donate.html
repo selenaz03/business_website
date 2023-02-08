@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Donate</title>
+    <style>
+    body {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        background-color: rgba(71, 93, 70, 0.46);
+    }
+
+    .logo {
+        height: 50px;
+        width: auto;
+    }
+
+    .navBar {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        margin: 0;
+        padding: 0px;
+        background-color: rgb(212, 190, 174);
+        font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        padding: 10px;
+        padding-top: 8px;
+        padding-bottom: 6px;
+        position: sticky;
+        top: 0;
+        width: 100%;
+    }
+
+    .headerLinks {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: 20px;
+        font-weight: 300;
+        text-decoration: none;
+    }
+
+    .link {
+        list-style: none;
+        text-decoration: none;
+        color: black;
+    }
+
+    .currLink {
+        list-style: none;
+        text-decoration: none;
+        color: black;
+        font-weight: 550;
+    }
+
+    a {
+        text-decoration: none;
+    }
+
+    .image {
+        width: 100%;
+        height: auto;
+    }
+
+    h1 {
+        display: flex;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        font-size: 40px;
+    }
+
+    .formContainer {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        border-radius: 7px;
+        border-width: 2px;
+        border-color: black;
+        width: 400px;
+        background-color: rgba(200, 213, 200, 0.81);
+        margin-top: 30px;
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    }
+
+    input[type=submit] {
+        background-color: #42513c7d;
+        border: none;
+        border-radius: 4px;
+        color: white;
+        padding: 16px 32px;
+        text-decoration: none;
+        margin: 4px 2px;
+        cursor: pointer;
+        margin: 30px;
+    }
+
+    input[type=radio] {
+        margin: 3px;
+    }
+
+    legend {
+        margin-bottom: 5px;
+        margin-top: 15px;
+    }
+
+    .customContainer {
+        display: flex;
+        flex-direction: column;
+        margin-top: 15px;
+    }
+    </style>
+</head>
+<body>
+    <div class="navBar">
+        <div><a href="index.html"><img class="logo" src="images/logo.svg" ></a></div>
+        <ul class="headerLinks">
+            <a href="donate.html"><li class="currLink">Donate Now</li></a>
+            <a href="contact.html"><li class="link">Contact Us</li></a>
+        </ul>
+    </div>
+    <div><img class="image" src="images/donate.webp"></div>
+    <div class="formContainer">
+        <h1>Donate Today!</h1>
+        <h3>Your impact: $1 = 10 meals</h3>
+        <form>
+            <legend>Select Amount:</legend>
+            <input type="radio" id="one" name="amount" value="$1">
+            <label for="one">$1</label><br>
+            <input type="radio" id="two" name="amount" value="$2">
+            <label for="two">$2</label><br>
+            <input type="radio" id="five" name="amount" value="$5">
+            <label for="five">$5</label><br>
+            <input type="radio" id="ten" name="amount" value="$10">
+            <label for="ten">$10</label><br>
+            <input type="radio" id="twenty" name="amount" value="$20">
+            <label for="twenty">$20</label><br>
+            <input type="radio" id="fifty" name="amount" value="$50">
+            <label for="fifty">$50</label><br>
+            <input type="radio" id="hundred" name="amount" value="$100">
+            <label for="hundred">$100</label><br>
+            <div class="customContainer">
+                <label for="custom">Custom Amount:</label>
+                <input type="text" id="custom" name="custom"><br>
+            </div>
+            <input type="submit" value="Submit">
+        </form>
+        <h2>Thank You!</h2>
+    </div>
+</div>
+</body>
+</html>

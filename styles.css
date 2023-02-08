@@ -1,0 +1,133 @@
+body {
+    display: flex;
+    flex-direction: column;
+}
+
+.logo {
+    height: 50px;
+    width: auto;
+}
+
+.navBar {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0;
+    padding: 0px;
+    background-color: rgb(212, 190, 174);
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    padding: 10px;
+    padding-top: 8px;
+    padding-bottom: 6px;
+    position: sticky;
+    top: 0;
+}
+
+.headerLinks {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 20px;
+    font-weight: 300;
+    text-decoration: none;
+}
+
+.link {
+    list-style: none;
+    text-decoration: none;
+    color: black;
+}
+
+a {
+    text-decoration: none;
+}
+
+.sloganContainer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: url(images/happy.jpg);
+    background-size: cover;
+    height: 500px;
+    /* width: auto; */
+}
+
+.slogan {
+    display: flex;
+    color: rgb(241, 224, 210);
+    background-color: rgba(0, 0, 0, 0.316);
+    align-items: center;
+    font-size: 35px;
+    text-align: center;
+    opacity: 1;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif
+}
+
+.aboutTitle {
+    color:rgb(70, 70, 70);
+    display: flex;
+    justify-content: center;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.aboutContainer {
+    background-color: rgba(48, 67, 49, 0.884);
+    padding: 30px;
+}
+
+.aboutTitle {
+    display: flex;
+    color: rgba(248, 235, 223, 0.813);
+    font-size: 24px;
+}
+
+.aboutContent {
+    display: flex;
+    color:rgba(255, 230, 201, 0.552);
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 18px;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.passingFood {
+    width: 100%;
+    height: auto;
+}
+
+.description {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(173, 155, 129, 0.686);
+    padding: 20px;
+    padding-top: 30px;
+}
+
+.descriptionTitle {
+    display: flex;
+    font-size: 25px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: 640;
+}
+
+.descriptionContent {
+    display: flex;
+    text-align: center;
+    font-size: 18px;
+    justify-content: space-between;
+    flex-direction: column;
+    margin: 10px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: 300;
+}
+
+.line {
+    display: flex;
+    margin: 7px;
+}
